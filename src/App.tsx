@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { AppProvider, useApp } from './store';
+import { AppProvider, useApp } from './store/store';
 import { ADMIN_ONLY_ROUTES, ROUTE_ACCESS, go, useRoute } from './router';
 import type { RouteId } from './router';
 import { Footer, Header, SyncBanner, Toasts } from './components/Layout';
