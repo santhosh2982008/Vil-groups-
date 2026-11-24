@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: vel-groups
+    runtime: docker
+    plan: starter
+    envVars:
+      - key: DB_FILE
+        value: /data/data.json
+      - key: OWNER_KEY
+        generateValue: true
+    disk:
+      name: vel-data
+      mountPath: /data
+      sizeGB: 1
